@@ -1,0 +1,39 @@
+import javax.swing.JOptionPane;
+public class ProgramasDinamicos {
+
+    public static void main (String[] args) {
+        String pesoString = JOptionPane.showInputDialog("Digite o seu peso :");
+        double peso = Double.parseDouble(pesoString);
+        String alturaString = JOptionPane.showInputDialog("Digite a sua altura :");
+        double altura = Double.parseDouble(alturaString);
+        double imc = peso /(altura * altura);
+        JOptionPane.showMessageDialog(null, "Seu IMC é :" + imc);
+
+        String nota1String = JOptionPane.showInputDialog("Digite a sua primeira nota :");
+        String nota2String = JOptionPane.showInputDialog("Digite a sua segunda nota :");
+        double nota1= Double.parseDouble(nota1String);
+        double nota2= Double.parseDouble(nota2String);
+        double media = (nota1 + nota2)/2;
+        JOptionPane.showMessageDialog(null, "Sua media é :" + media);
+
+        String valorDaCompraString = JOptionPane.showInputDialog("Digite o valor da compra :");
+        double valorDaCompra = Double.parseDouble(valorDaCompraString);
+        String descontoString = JOptionPane.showInputDialog("Digite o desconto :");
+        double desconto = Double.parseDouble(descontoString);
+        double valorComDesconto = valorDaCompra - (valorDaCompra*desconto/100);
+        JOptionPane.showMessageDialog(null, "Você pagará " + valorComDesconto);
+
+        int quantMacas = Integer.parseInt(JOptionPane.showInputDialog("Quantas maças você deseja comprar ? "));
+        int quantMamoes = Integer.parseInt(JOptionPane.showInputDialog("Quantas mamoes você deseja comprar ? "));
+        double valorAPagar = quantMacas * 1 + quantMamoes * 3.50;
+        JOptionPane.showMessageDialog(null,"Você pagará " + valorAPagar);
+
+        String nomeDoUsuario = JOptionPane.showInputDialog("Qual o seu nome ?");
+        int idadeDoUsuario = Integer.parseInt(JOptionPane.showInputDialog("Qual a sua idade ? "));
+        JOptionPane.showMessageDialog(null,"Parabéns " + nomeDoUsuario + " pelos seus " + idadeDoUsuario + " anos.");
+
+        System.out.println("Boa noite !!");
+
+    }
+
+}
