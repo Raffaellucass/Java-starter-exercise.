@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class ProgramasDinamicos {
+
+    //Leia 2 valores inteiros e armazene-os nas variáveis A e B. Efetue a soma de A e B atribuindo o seu
+    // na variável X. Imprima X conforme exemplo apresentado abaixo. Não apresente mensagem alguma além
+    // daquilo que está sendo especificado e não esqueça de imprimir o fim de linha após o resultado,
+    // caso contrário, você receberá "Presentation Error".
+    public static void main (String[] args) {
+
+        double valorA = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor de A ? "));
+        double valorB = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor de B ? "));
+        double variavelX = (valorA + valorB);
+        JOptionPane.showMessageDialog(null, "X = " + variavelX);
+
+    }
+
+
+}
