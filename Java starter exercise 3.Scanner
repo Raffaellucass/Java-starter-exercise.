@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class UsoScanner {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe a primeira nota: ");
+        double nota1 = Double.parseDouble(scanner.nextLine());
+        System.out.println("Informe a segunda nota: ");
+        double nota2 = Double.parseDouble(scanner.nextLine());
+        System.out.println("Informe a terceira nota: ");
+        double nota3 = Double.parseDouble(scanner.nextLine());
+        double mediaDoAluno = ((2*nota1) + (3*nota2) + (5*nota3)) / (2 + 3 + 5);
+        System.out.println("Sua média foi : " + mediaDoAluno);
+
+
+    }
+
+}
