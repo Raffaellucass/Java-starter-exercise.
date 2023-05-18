@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    //Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas
+    // por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas
+    // efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+
+    public static void main(String[] args) {
+        String nomeDoVendedor = JOptionPane.showInputDialog("Informe o seu nome :");
+        double salarioDoVendedor = Double.parseDouble(JOptionPane.showInputDialog("Informe o seu salario : "));
+        double montenteEmVendas = Double.parseDouble(JOptionPane.showInputDialog("Informe o seu montante em vendas : "));
+        double porcentagemDeComissao = Double.parseDouble(JOptionPane.showInputDialog("Informe a porcetagem em cima das vendas : "));
+        double totalAReceber = salarioDoVendedor + (montenteEmVendas*(porcentagemDeComissao/100));
+        JOptionPane.showMessageDialog(null, "Funcionário : " + nomeDoVendedor + "\nTotal a receber no final do mês : " + totalAReceber);
+
+
+    }
+}
